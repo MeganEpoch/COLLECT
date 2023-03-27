@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    stages {
+        //构建镜像
+        stage('docker image build') {
+            steps {
+            sh label: '', script: 'ls'
+            sh label: '', script: 'npm install'
+            sh label: '', script: 'npm run build'
+            sh label: '', script: 'docker stop front-master'
+            sh label: '', script: 'docker rm front-master'
+            sh label: '', script: 'docker build -t front-master .'
+            }
+            post {
+                failure{
+                    updateGitlabCommitStatus name:'build',state:'failed'
+                }
+                success{
+                    updateGitlabCommitStatus name:'build',state:'success'
+                }
+            }
+        }
+        //运行容器
+        stage('docker run') {
+            steps {
+                sh label: '', script: 'docker run -d --name front-master -p 8448:80 front-master'
+            }
+            post {
+                failure{
+                    updateGitlabCommitStatus name:'run',state:'failed'
+                }
+                success{
+                    updateGitlabCommitStatus name:'run',state:'success'
+                }
+            }
+        }
+
+    }
+}
