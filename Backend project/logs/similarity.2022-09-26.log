@@ -1,0 +1,201 @@
+2022-05-28 16:56:24,396 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:218] - Shutting down ExecutorService 'taskExecutor'
+2022-05-28 16:56:35,074 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.1 on lym-MacBook-Pro.local with PID 2919 (/Users/macbookair/backend-sec/target/classes started by macbookair in /Users/macbookair/backend-sec)
+2022-05-28 16:56:35,078 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2022-05-28 16:56:37,111 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2022-05-28 16:56:37,119 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-05-28 16:56:37,122 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2022-05-28 16:56:37,123 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-28 16:56:37,236 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2022-05-28 16:56:37,236 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 2070 ms
+2022-05-28 16:56:37,393 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2022-05-28 16:56:37,467 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-05-28 16:56:38,403 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2022-05-28 16:56:38,881 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2022-05-28 16:56:38,903 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-28 16:56:38,985 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 4.642 seconds (JVM running for 5.826)
+2022-05-28 16:58:53,268 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-28 16:58:53,273 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2022-05-28 16:58:53,292 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 19 ms
+2022-05-28 16:58:53,456 [http-nio-8081-exec-2] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqtnkpap2qpf7c1cdrplu|70d77826, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqtnkpap2qpf7c1cdrplu|70d77826, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://124.222.219.151:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-05-28 16:59:14,607 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:218] - Shutting down ExecutorService 'taskExecutor'
+2022-05-28 16:59:23,524 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.1 on lym-MacBook-Pro.local with PID 3034 (/Users/macbookair/backend-sec/target/classes started by macbookair in /Users/macbookair/backend-sec)
+2022-05-28 16:59:23,528 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2022-05-28 16:59:26,005 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2022-05-28 16:59:26,015 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-05-28 16:59:26,016 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2022-05-28 16:59:26,016 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-28 16:59:26,121 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2022-05-28 16:59:26,122 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 2492 ms
+2022-05-28 16:59:26,420 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2022-05-28 16:59:26,467 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-05-28 16:59:27,369 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2022-05-28 16:59:27,877 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2022-05-28 16:59:27,940 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-28 16:59:28,063 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 5.36 seconds (JVM running for 7.231)
+2022-05-28 16:59:34,515 [http-nio-8081-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-28 16:59:34,526 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2022-05-28 16:59:34,537 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 11 ms
+2022-05-28 16:59:34,844 [http-nio-8081-exec-3] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqtnkpap2qt1mnc1fwyv|1f66d8e1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqtnkpap2qt1mnc1fwyv|1f66d8e1, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://124.222.219.151:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-05-28 17:02:05,611 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:218] - Shutting down ExecutorService 'taskExecutor'
+2022-05-28 17:02:11,787 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.1 on lym-MacBook-Pro.local with PID 3145 (/Users/macbookair/backend-sec/target/classes started by macbookair in /Users/macbookair/backend-sec)
+2022-05-28 17:02:11,793 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2022-05-28 17:02:13,962 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2022-05-28 17:02:13,972 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-05-28 17:02:13,974 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2022-05-28 17:02:13,974 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-28 17:02:14,083 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2022-05-28 17:02:14,083 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 2186 ms
+2022-05-28 17:02:14,429 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2022-05-28 17:02:14,462 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-05-28 17:02:15,530 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2022-05-28 17:02:16,240 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2022-05-28 17:02:16,265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-28 17:02:16,325 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 5.47 seconds (JVM running for 7.763)
+2022-05-28 17:02:35,188 [http-nio-8081-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-28 17:02:35,191 [http-nio-8081-exec-5] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2022-05-28 17:02:35,206 [http-nio-8081-exec-5] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 15 ms
+2022-05-28 17:02:35,412 [http-nio-8081-exec-5] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqtnkpap2qwn971trfclp|157d3a45, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqtnkpap2qwn971trfclp|157d3a45, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://124.222.219.151:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-05-28 17:08:10,162 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:218] - Shutting down ExecutorService 'taskExecutor'
+2022-05-28 17:08:22,444 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.1 on lym-MacBook-Pro.local with PID 3345 (/Users/macbookair/backend-sec/target/classes started by macbookair in /Users/macbookair/backend-sec)
+2022-05-28 17:08:22,450 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2022-05-28 17:08:25,200 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2022-05-28 17:08:25,213 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-05-28 17:08:25,215 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2022-05-28 17:08:25,215 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-28 17:08:25,371 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2022-05-28 17:08:25,372 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 2787 ms
+2022-05-28 17:08:25,828 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2022-05-28 17:08:25,873 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-05-28 17:08:27,429 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2022-05-28 17:08:28,244 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2022-05-28 17:08:28,307 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-28 17:08:28,412 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 7.149 seconds (JVM running for 9.359)
+2022-05-28 17:08:50,536 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-28 17:08:50,541 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2022-05-28 17:08:50,557 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 16 ms
+2022-05-28 17:08:50,781 [http-nio-8081-exec-1] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1bqtnkpap2r4lu41dhvs1y|77724cbe, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1bqtnkpap2r4lu41dhvs1y|77724cbe, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://124.222.219.151:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-09-26 14:11:16,506 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.10 on LAPTOP-JO3CQK6U with PID 16336 (D:\大学\大三下\软件工程与计算（Ⅲ）\backend\target\classes started by zhang in D:\大学\大三下\软件工程与计算（Ⅲ）\backend)
+2022-09-26 14:11:16,509 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2022-09-26 14:11:17,829 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2022-09-26 14:11:17,837 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2022-09-26 14:11:17,838 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2022-09-26 14:11:17,838 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-09-26 14:11:18,035 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2022-09-26 14:11:18,035 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 1471 ms
+2022-09-26 14:11:18,140 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2022-09-26 14:11:18,170 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-09-26 14:11:18,687 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2022-09-26 14:11:19,071 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2022-09-26 14:11:19,105 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2022-09-26 14:11:19,145 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 3.161 seconds (JVM running for 5.377)
+2022-09-26 14:14:42,203 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-26 14:14:42,205 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2022-09-26 14:14:42,230 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 24 ms
+2022-09-26 14:14:42,466 [http-nio-8081-exec-2] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgetq9arxeus5vmextjm|4640195a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgetq9arxeus5vmextjm|4640195a, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://124.222.219.151:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-09-26 15:14:52,654 [C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-AdminTaskTimer] WARN  c.m.v.a.ThreadPoolAsynchronousRunner [Line:220] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@472f3e20 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2022-09-26 15:14:52,689 [C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-AdminTaskTimer] WARN  c.m.v.a.ThreadPoolAsynchronousRunner [Line:220] - com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@472f3e20 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@1a0e9312
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-HelperThread-#0
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@2e4b844
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-HelperThread-#1
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@234e1ace
+			on thread: C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-HelperThread-#2
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@4856eb9a
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@26ae6781
+		com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask@12fcd88
+Pool thread stack traces:
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-HelperThread-#0,5,main]
+		java.base@11.0.10/java.net.SocketInputStream.socketRead0(Native Method)
+		java.base@11.0.10/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+		java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:168)
+		java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:140)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+		java.base@11.0.10/java.io.FilterInputStream.read(FilterInputStream.java:133)
+		app//com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+		app//com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+		app//com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+		app//com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+		app//com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+		app//com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+		app//com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+		app//com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+		app//com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+		app//com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+		app//com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1168)
+		app//com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:286)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:510)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:452)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:444)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:434)
+		app//com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:2211)
+		app//com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-HelperThread-#2,5,main]
+		java.base@11.0.10/java.net.SocketInputStream.socketRead0(Native Method)
+		java.base@11.0.10/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+		java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:168)
+		java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:140)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+		java.base@11.0.10/java.io.FilterInputStream.read(FilterInputStream.java:133)
+		app//com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+		app//com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+		app//com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+		app//com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+		app//com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+		app//com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+		app//com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+		app//com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+		app//com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+		app//com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+		app//com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1168)
+		app//com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:286)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:510)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:452)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:444)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:434)
+		app//com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:2211)
+		app//com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+	Thread[C3P0PooledConnectionPoolManager[identityToken->1hgetq9arxeus5vmextjm|4640195a]-HelperThread-#1,5,main]
+		java.base@11.0.10/java.net.SocketInputStream.socketRead0(Native Method)
+		java.base@11.0.10/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+		java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:168)
+		java.base@11.0.10/java.net.SocketInputStream.read(SocketInputStream.java:140)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+		app//com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+		java.base@11.0.10/java.io.FilterInputStream.read(FilterInputStream.java:133)
+		app//com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+		app//com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+		app//com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+		app//com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+		app//com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+		app//com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+		app//com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+		app//com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+		app//com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+		app//com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+		app//com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+		app//com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1168)
+		app//com.mchange.v2.c3p0.impl.DefaultConnectionTester.activeCheckConnection(DefaultConnectionTester.java:286)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.testPooledConnection(C3P0PooledConnectionPool.java:510)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:452)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.finerLoggingTestPooledConnection(C3P0PooledConnectionPool.java:444)
+		app//com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.refurbishIdleResource(C3P0PooledConnectionPool.java:434)
+		app//com.mchange.v2.resourcepool.BasicResourcePool$AsyncTestIdleResourceTask.run(BasicResourcePool.java:2211)
+		app//com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:696)
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.welldone.collect.mapperservice.user.PreferenceMapper">
+    <resultMap id="BaseResultMap" type="cn.welldone.collect.po.user.Preference">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="employee_id" jdbcType="INTEGER" property="employeeId" />
+        <result column="device" jdbcType="VARCHAR" property="device" />
+        <result column="task_type" jdbcType="VARCHAR" property="taskType" />
+    </resultMap>
+
+    <insert id="insert" parameterType="cn.welldone.collect.po.user.Preference" useGeneratedKeys="true" keyProperty="id">
+    insert into preference (id, employee_id, device, task_type)
+    values (#{id,jdbcType=INTEGER}, #{employeeId,jdbcType=INTEGER}, #{device,jdbcType=VARCHAR}, #{taskType,jdbcType=VARCHAR})
+  </insert>
+
+    <select id="selectByEmployeeId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from preference t
+    where t.employee_id = #{eid}
+  </select>
+
+</mapper>

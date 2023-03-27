@@ -1,0 +1,11 @@
+cn\welldone\collect\service\report\ReportClusterServiceTest.class
+cn\welldone\collect\mapper\TodoTaskMappperTest.class
+cn\welldone\collect\service\recommend\RecommendServiceTest.class
+cn\welldone\collect\service\recommend\RuleServiceTest.class
+cn\welldone\collect\service\report\ReportSimilarityServiceTest.class
+cn\welldone\collect\service\report\ReportServiceTest.class
+cn\welldone\collect\service\task\TaskServiceTest.class
+cn\welldone\collect\service\report\CommentServiceTest.class
+cn\welldone\collect\service\task\TodoTaskServiceTest.class
+cn\welldone\collect\service\task\FileServiceTest.class
+cn\welldone\collect\service\user\PreferenceServiceTest.class

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.welldone.collect.mapperservice.recommend.RecommendRuleMapper">
+    <resultMap id="BaseResultMap" type="cn.welldone.collect.po.rule.RecommendRule">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="content" jdbcType="VARCHAR" property="content" />
+        <result column="status" jdbcType="INTEGER" property="status" />
+        <result column="type" jdbcType="INTEGER" property="type" />
+        <result column="change_time" jdbcType="TIMESTAMP" property="changeTime" />
+    </resultMap>
+
+    <insert id="insert" parameterType="cn.welldone.collect.po.rule.RecommendRule" useGeneratedKeys="true" keyProperty="id">
+    insert into recommend_rule (id, content, status, type, change_time)
+    values (#{id,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER},
+      #{type,jdbcType=INTEGER}, #{changeTime,jdbcType=TIMESTAMP})
+  </insert>
+
+    <select id="queryMostRecentRule" resultType="cn.welldone.collect.po.rule.RecommendRule">
+    select *
+    from recommend_rule
+    where status=1
+    order by change_time desc limit 1
+  </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+    select *
+    from recommend_rule
+  </select>
+
+    <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from recommend_rule c
+        where c.id = #{id,jdbcType=INTEGER}
+
+  </select>
+    <update id="update" >
+    update recommend_rule
+    set status=1
+    where  status= 2
+  </update>
+
+    <update id="updateById" >
+    update recommend_rule
+    set status=2
+    where  id=#{id,jdbcType=INTEGER}
+  </update>
+
+    <select id="queryUsingRule" resultMap="BaseResultMap">
+    select *
+    from recommend_rule c
+        where c.status = 2
+
+  </select>
+</mapper>

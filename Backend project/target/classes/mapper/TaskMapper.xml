@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.welldone.collect.mapperservice.task.TaskMapper">
+  <resultMap id="BaseResultMap" type="cn.welldone.collect.po.task.Task">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="intro" jdbcType="VARCHAR" property="intro" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="delete_time" jdbcType="TIMESTAMP" property="deleteTime" />
+    <result column="required_number" jdbcType="INTEGER" property="requiredNumber" />
+    <result column="employer_id" jdbcType="INTEGER" property="employerId" />
+    <result column="employer_name" jdbcType="VARCHAR" property="employerName" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="accepted" jdbcType="BIT" property="accepted" />
+    <result column="manageable" jdbcType="BIT" property="manageable" />
+    <result column="file_name1" jdbcType="VARCHAR" property="fileName1" />
+    <result column="file_name2" jdbcType="VARCHAR" property="fileName2" />
+    <result column="similarity" jdbcType="DOUBLE" property="similarity" />
+    <result column="device" jdbcType="VARCHAR" property="device" />
+    <result column="difficulty" jdbcType="INTEGER" property="difficulty" />
+
+
+
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert" parameterType="cn.welldone.collect.po.task.Task" useGeneratedKeys="true" keyProperty="id">
+    insert into task (id, name, type, intro, create_time, end_time, delete_time, required_number,
+      employer_id, employer_name,status,accepted,manageable, file_name1, file_name2,similarity,device,difficulty)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR},
+      #{intro,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{deleteTime,jdbcType=TIMESTAMP}, #{requiredNumber,jdbcType=INTEGER},
+      #{employerId,jdbcType=INTEGER}, #{employerName,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR},#{accepted,jdbcType=BIT}, #{manageable,jdbcType=BIT}, #{fileName1,jdbcType=VARCHAR}, #{fileName2,jdbcType=VARCHAR},#{similarity,jdbcType=DOUBLE},#{device,jdbcType=VARCHAR},#{difficulty,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.welldone.collect.po.task.Task">
+    update task
+    set name = #{name,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      intro = #{intro,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
+      delete_time = #{deleteTime,jdbcType=TIMESTAMP},
+      required_number = #{requiredNumber,jdbcType=INTEGER},
+      employer_id = #{employerId,jdbcType=INTEGER},
+      employer_name = #{employerName,jdbcType=VARCHAR},
+       file_name1=#{fileName1,jdbcType=VARCHAR},
+       file_name2=#{fileName2,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from task c
+    where c.id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select *
+    from task c
+    group by c.id
+  </select>
+  <select id="selectTasks" resultMap="BaseResultMap">
+    select *
+    from task c
+    where c.status = #{status,jdbcType=INTEGER}
+    group by c.id
+  </select>
+<!--  <select id="selectByType" parameterType="java.lang.String" resultMap="BaseResultMap">-->
+<!--    select c.id, c.name, c.type, c.intro, c.picture, c.school, c.create_time, c.delete_time, c.cost, c.teacher_id, c.teacher_name, count(t.user_id) as likes-->
+<!--    from task c-->
+<!--    left join course_likes as t-->
+<!--    on c.id = t.course_id-->
+<!--    where type = #{type,jdbcType=VARCHAR}-->
+<!--    group by c.id-->
+<!--  </select>-->
+  <select id="queryAll" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select *
+    from task c
+    <where>
+      <if test="name!=null and name!=''">
+        or name like concat('%',#{key},'%')
+      </if>
+      <if test="intro!=null and type!=''">
+        or intro like concat('%',#{key},'%')
+      </if>
+    </where>
+    group by c.id
+    order by create_time asc
+  </select>
+  <select id="selectByEmployerId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from task c
+    where employer_id = #{userId}
+    group by c.id
+  </select>
+  <select id="selectByEmployeeId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from task c
+    where exists (
+        select o.id from todo_task o where o.task_id = c.id and o.user_id = #{userId}
+    )
+    group by c.id
+  </select>
+<!--待修改-->
+<!--  <select id="selectByStatus" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+<!--    select *-->
+<!--    from task c-->
+<!--    where  c.status=4-->
+<!--  </select>-->
+  <select id="selectValidTasks" parameterType="java.util.Date" resultMap="BaseResultMap">
+    select *
+    from task c
+    where to_days(#{today})-to_days(c.end_time) &lt;= 0
+    group by c.id
+  </select>
+
+  <select id="selectInvalidTasks" parameterType="java.util.Date" resultMap="BaseResultMap">
+    select *
+    from task c
+    where to_days(#{today})-to_days(c.end_time) &gt; 0
+    group by c.id
+  </select>
+  <delete id="clearTable">
+    DELETE from task
+  </delete>
+  <update id="updateStatusByPrimaryKey" >
+    update task
+    set status=#{status,jdbcType=INTEGER}
+
+    where id = #{taskId,jdbcType=INTEGER}
+  </update>
+</mapper>

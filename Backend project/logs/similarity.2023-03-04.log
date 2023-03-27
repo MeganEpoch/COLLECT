@@ -1,0 +1,151 @@
+2023-03-04 12:59:12,860 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.10 on LAPTOP-JO3CQK6U with PID 7872 (D:\大学\大三下\软件工程与计算（Ⅲ）\backend\target\classes started by zhang in D:\大学\大三下\软件工程与计算（Ⅲ）\backend)
+2023-03-04 12:59:12,869 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2023-03-04 12:59:14,770 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2023-03-04 12:59:14,784 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-04 12:59:14,785 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-03-04 12:59:14,785 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-03-04 12:59:15,016 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-03-04 12:59:15,016 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 2071 ms
+2023-03-04 12:59:15,146 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2023-03-04 12:59:15,187 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2023-03-04 12:59:15,796 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2023-03-04 12:59:16,234 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2023-03-04 12:59:16,269 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-04 12:59:16,317 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 4.228 seconds (JVM running for 8.21)
+2023-03-04 13:07:04,445 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-04 13:07:04,446 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2023-03-04 13:07:04,450 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 4 ms
+2023-03-04 13:07:04,692 [http-nio-8081-exec-2] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgetq9au1bfyelmhs6bl1|7f323b3a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgetq9au1bfyelmhs6bl1|7f323b3a, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://124.222.219.151:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2023-03-04 13:12:22,468 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.10 on LAPTOP-JO3CQK6U with PID 30860 (D:\大学\大三下\软件工程与计算（Ⅲ）\backend\target\classes started by zhang in D:\大学\大三下\软件工程与计算（Ⅲ）\backend)
+2023-03-04 13:12:22,473 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2023-03-04 13:12:24,131 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2023-03-04 13:12:24,144 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-04 13:12:24,145 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-03-04 13:12:24,146 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-03-04 13:12:24,340 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-03-04 13:12:24,340 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 1816 ms
+2023-03-04 13:12:24,454 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2023-03-04 13:12:24,492 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2023-03-04 13:12:25,105 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2023-03-04 13:12:25,541 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2023-03-04 13:12:25,574 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-04 13:12:25,632 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 3.809 seconds (JVM running for 6.42)
+2023-03-04 13:12:53,159 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-04 13:12:53,159 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2023-03-04 13:12:53,161 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 2 ms
+2023-03-04 13:12:53,354 [http-nio-8081-exec-2] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgetq9au1bgfbms2sifbz|50b0afd7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgetq9au1bgfbms2sifbz|50b0afd7, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2023-03-04 13:14:38,736 [http-nio-8081-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [Line:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'collect.comment' doesn't exist
+### The error may exist in file [D:\大学\大三下\软件工程与计算（Ⅲ）\backend\target\classes\mapper\CommentMapper.xml]
+### The error may involve cn.welldone.collect.mapperservice.report.CommentMapper.selectByReportId-Inline
+### The error occurred while setting parameters
+### SQL: select *     from comment t     where t.report_id = ?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'collect.comment' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'collect.comment' doesn't exist] with root cause
+java.sql.SQLSyntaxErrorException: Table 'collect.comment' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy84.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:141)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy82.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy63.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy66.selectByReportId(Unknown Source)
+	at cn.welldone.collect.serviceImpl.report.CommentServiceImpl.getComments(CommentServiceImpl.java:55)
+	at cn.welldone.collect.controller.report.CommentController.getComments(CommentController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-04 13:31:21,832 [main] INFO  c.w.collect.CollectApplication [Line:55 ] - Starting CollectApplication using Java 11.0.10 on LAPTOP-JO3CQK6U with PID 20184 (D:\大学\大三下\软件工程与计算（Ⅲ）\backend\target\classes started by zhang in D:\大学\大三下\软件工程与计算（Ⅲ）\backend)
+2023-03-04 13:31:21,836 [main] INFO  c.w.collect.CollectApplication [Line:664] - The following profiles are active: dev
+2023-03-04 13:31:23,401 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:108] - Tomcat initialized with port(s): 8081 (http)
+2023-03-04 13:31:23,415 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-04 13:31:23,415 [main] INFO  o.a.catalina.core.StandardService [Line:173] - Starting service [Tomcat]
+2023-03-04 13:31:23,416 [main] INFO  o.a.catalina.core.StandardEngine [Line:173] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-03-04 13:31:23,651 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring embedded WebApplicationContext
+2023-03-04 13:31:23,652 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [Line:289] - Root WebApplicationContext: initialization completed in 1761 ms
+2023-03-04 13:31:23,770 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog [Line:212] - MLog clients using slf4j logging.
+2023-03-04 13:31:23,811 [main] INFO  com.mchange.v2.c3p0.C3P0Registry [Line:212] - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2023-03-04 13:31:24,397 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor [Line:181] - Initializing ExecutorService 'taskExecutor'
+2023-03-04 13:31:24,839 [main] INFO  o.a.coyote.http11.Http11NioProtocol [Line:173] - Starting ProtocolHandler ["http-nio-8081"]
+2023-03-04 13:31:24,896 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [Line:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2023-03-04 13:31:24,947 [main] INFO  c.w.collect.CollectApplication [Line:61 ] - Started CollectApplication in 3.693 seconds (JVM running for 6.627)
+2023-03-04 13:31:38,133 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [Line:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-04 13:31:38,133 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:525] - Initializing Servlet 'dispatcherServlet'
+2023-03-04 13:31:38,135 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet [Line:547] - Completed initialization in 2 ms
+2023-03-04 13:31:38,308 [http-nio-8081-exec-1] INFO  c.m.v.c.i.AbstractPoolBackedDataSource [Line:212] - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgetq9au1bh3qqj1gk7g9h|314a31b0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgetq9au1bh3qqj1gk7g9h|314a31b0, idleConnectionTestPeriod -> 3600, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/collect?setUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 18000, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> select 1, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]

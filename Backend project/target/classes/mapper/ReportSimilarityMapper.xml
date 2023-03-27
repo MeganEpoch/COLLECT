@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.welldone.collect.mapperservice.report.ReportSimilarityMapper">
+    <resultMap id="BaseResultMap" type="cn.welldone.collect.po.report.ReportSimilarity">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="report_id1" property="reportId1" jdbcType="INTEGER"/>
+        <result column="report_id2" property="reportId2" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="DOUBLE"/>
+        <result column="intro" property="intro" jdbcType="DOUBLE"/>
+        <result column="steps" property="steps" jdbcType="DOUBLE"/>
+        <result column="device" property="device" jdbcType="DOUBLE"/>
+        <result column="picture" property="picture" jdbcType="VARCHAR"/>
+        <result column="bug_form" property="bugForm" jdbcType="DOUBLE"/>
+        <result column="severity" property="severity" jdbcType="DOUBLE"/>
+        <result column="recurrence" property="recurrence" jdbcType="DOUBLE"/>
+        <result column="similarity" property="similarity" jdbcType="DOUBLE"/>
+    </resultMap>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from report_similarity
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="cn.welldone.collect.po.report.ReportSimilarity">
+        insert into report_similarity (id, report_id1, report_id2,
+                                       title, intro, steps, device,
+                                       picture, bug_form, severity,
+                                       recurrence, similarity)
+        values (#{id,jdbcType=INTEGER}, #{reportId1,jdbcType=INTEGER}, #{reportId2,jdbcType=INTEGER},
+                #{title,jdbcType=DOUBLE}, #{intro,jdbcType=DOUBLE}, #{steps,jdbcType=DOUBLE}, #{device,jdbcType=DOUBLE},
+                #{picture,jdbcType=VARCHAR}, #{bugForm,jdbcType=DOUBLE}, #{severity,jdbcType=DOUBLE},
+                #{recurrence,jdbcType=DOUBLE}, #{similarity,jdbcType=DOUBLE})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.welldone.collect.po.report.ReportSimilarity">
+        update report_similarity
+        set report_id1 = #{reportId1,jdbcType=INTEGER},
+            report_id2 = #{reportId2,jdbcType=INTEGER},
+            title      = #{title,jdbcType=DOUBLE},
+            intro      = #{intro,jdbcType=DOUBLE},
+            steps      = #{steps,jdbcType=DOUBLE},
+            device     = #{device,jdbcType=DOUBLE},
+            picture    = #{picture,jdbcType=VARCHAR},
+            bug_form   = #{bugForm,jdbcType=DOUBLE},
+            severity   = #{severity,jdbcType=DOUBLE},
+            recurrence = #{recurrence,jdbcType=DOUBLE},
+            similarity = #{similarity,jdbcType=DOUBLE}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select id,
+               report_id1,
+               report_id2,
+               title,
+               intro,
+               steps,
+               device,
+               picture,
+               bug_form,
+               severity,
+               recurrence,
+               similarity
+        from report_similarity
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap">
+        select id,
+               report_id1,
+               report_id2,
+               title,
+               intro,
+               steps,
+               device,
+               picture,
+               bug_form,
+               severity,
+               recurrence,
+               similarity
+        from report_similarity
+    </select>
+    <select id="selectByReportId1" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select *
+        from report_similarity
+        where report_id1 = #{reportId1,jdbcType=INTEGER}
+    </select>
+</mapper>

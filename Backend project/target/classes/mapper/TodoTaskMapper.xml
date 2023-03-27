@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.welldone.collect.mapperservice.task.TodoTaskMapper">
+  <resultMap id="BaseResultMap" type="cn.welldone.collect.po.task.TodoTask">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <id column="task_id" jdbcType="INTEGER" property="taskId" />
+    <result column="task_name" jdbcType="VARCHAR" property="taskName" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from todo_task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+<!--  id, #{id,jdbcType=INTEGER},
+useGeneratedKeys="true" keyProperty="id"
+
+-->
+  <insert id="insert" parameterType="cn.welldone.collect.po.task.TodoTask"  >
+    insert into todo_task ( task_id, task_name, create_time, user_id, status)
+    values ( #{taskId,jdbcType=INTEGER}, #{taskName,jdbcType=VARCHAR},
+       #{createTime,jdbcType=TIMESTAMP},  #{userId,jdbcType=INTEGER}, #{status,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="cn.welldone.collect.po.task.TodoTask">
+    update todo_task
+    set task_name = #{taskName,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      user_id = #{userId,jdbcType=INTEGER},
+      status = #{status,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from todo_task c
+    where c.id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select *
+    from todo_task c
+    group by c.id
+  </select>
+<!--  <select id="selectByType" parameterType="java.lang.String" resultMap="BaseResultMap">-->
+<!--    select c.id, c.name, c.type, c.intro, c.picture, c.school, c.create_time, c.delete_time, c.cost, c.teacher_id, c.teacher_name, count(t.user_id) as todoTasks-->
+<!--    from task c-->
+<!--    left join course_likes as t-->
+<!--    on c.id = t.course_id-->
+<!--    where type = #{type,jdbcType=VARCHAR}-->
+<!--    group by c.id-->
+<!--  </select>-->
+<!--  <select id="queryAll" parameterType="java.lang.String" resultMap="BaseResultMap">-->
+<!--    select c.id, c.name, c.type, c.intro, c.create_time, c.end_time, c.delete_time, c.required_number, c.employer_id, c.employer_name-->
+<!--    from task c-->
+<!--    <where>-->
+<!--      <if test="name!=null and name!=''">-->
+<!--        or name like concat('%',#{key},'%')-->
+<!--      </if>-->
+<!--      <if test="intro!=null and type!=''">-->
+<!--        or intro like concat('%',#{key},'%')-->
+<!--      </if>-->
+<!--    </where>-->
+<!--    group by c.id-->
+<!--    order by create_time asc-->
+<!--  </select>-->
+  <select id="selectByEmployerId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select c.id, c.name, c.type, c.intro, c.create_time, c.end_time, c.delete_time, c.required_number, c.employer_id, c.employer_name
+    from task c
+    where employer_id = #{userId}
+    group by c.id
+  </select>
+  <select id="selectByEmployeeId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from todo_task t
+    where t.user_id = #{userId}
+  </select>
+
+<!--  <select id="selectByStatus" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+<!--    select c.id, c.name, c.type, c.intro, c.create_time, c.end_time, c.delete_time, c.required_number, c.employer_id, c.employer_name,-->
+<!--           c.status,c.accepted,c.manageable-->
+<!--    from task c-->
+<!--    where  c.status=4-->
+<!--  </select>-->
+  <select id="selectByStatus" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+          select *
+  from todo_task t
+  where t.user_id=#{userId} and t.status=#{status}
+  </select>
+
+  <select id="queryMostRecentTask" resultType="cn.welldone.collect.po.task.TodoTask">
+    select *
+    from todo_task
+    where user_id=#{userId} and task_id=#{taskId}
+    order by create_time desc limit 1
+  </select>
+
+  <delete id="clearTable">
+    DELETE from report
+  </delete>
+
+  <select id="countByDevice" resultType="java.lang.Integer">
+    select count(*)
+    from todo_task c
+           left join task t on c.task_id = t.id
+    where c.user_id=#{userId} and t.device=#{device}
+  </select>
+
+  <select id="countByType" resultType="java.lang.Integer">
+    select count(*)
+    from todo_task c
+           left join task t on c.task_id = t.id
+    where c.user_id=#{userId} and t.type=#{type}
+  </select>
+
+  <select id="countByDifficulty" resultType="java.lang.Integer">
+    select count(*)
+    from todo_task c
+           left join task t on c.task_id = t.id
+    where c.user_id=#{userId} and t.difficulty=#{difficulty}
+  </select>
+
+  <update id="updateStatus" >
+    update todo_task
+    set   status = #{status,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

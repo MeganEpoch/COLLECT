@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.welldone.collect.mapperservice.report.CommentMapper">
+    <resultMap id="BaseResultMap" type="cn.welldone.collect.po.report.Comment">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="employee_id" jdbcType="INTEGER" property="employeeId" />
+        <result column="report_id" jdbcType="INTEGER" property="reportId" />
+        <result column="score" jdbcType="INTEGER" property="score" />
+        <result column="content" jdbcType="VARCHAR" property="content" />
+    </resultMap>
+
+    <insert id="insert" parameterType="cn.welldone.collect.po.report.Comment" useGeneratedKeys="true" keyProperty="id">
+    insert into comment (id, employee_id, report_id, score,content)
+    values (#{id,jdbcType=INTEGER}, #{employeeId,jdbcType=INTEGER},#{reportId,jdbcType=INTEGER}, #{score,jdbcType=INTEGER},#{content,jdbcType=VARCHAR})
+  </insert>
+
+    <select id="selectByEmployeeId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from comment t
+    where t.employee_id = #{eid}
+  </select>
+
+    <select id="selectByReportId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from comment t
+    where t.report_id = #{reportId}
+  </select>
+</mapper>

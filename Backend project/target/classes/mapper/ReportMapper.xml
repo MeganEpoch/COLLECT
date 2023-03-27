@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.welldone.collect.mapperservice.report.ReportMapper">
+    <resultMap id="BaseResultMap" type="cn.welldone.collect.po.report.Report">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="task_id" jdbcType="INTEGER" property="taskId"/>
+        <result column="employee_id" jdbcType="INTEGER" property="employeeId"/>
+        <result column="employee_name" jdbcType="VARCHAR" property="employeeName"/>
+        <result column="report_time" jdbcType="TIMESTAMP" property="reportTime"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="intro" jdbcType="VARCHAR" property="intro"/>
+        <result column="steps" jdbcType="VARCHAR" property="steps"/>
+        <result column="device" jdbcType="VARCHAR" property="device"/>
+        <result column="picture" jdbcType="VARCHAR" property="picture"/>
+        <result column="bug_form" jdbcType="VARCHAR" property="bugForm"/>
+        <result column="severity" jdbcType="VARCHAR" property="severity"/>
+        <result column="recurrence" jdbcType="VARCHAR" property="recurrence"/>
+        <result column="score" jdbcType="DOUBLE" property="score"/>
+
+    </resultMap>
+    <!--    #{id,jdbcType=INTEGER},-->
+    <insert id="insert" parameterType="cn.welldone.collect.po.report.Report" useGeneratedKeys="true"
+            keyProperty="id">
+        INSERT INTO report (task_id, employee_id, employee_name, report_time, title, intro, steps, device, picture,
+                            bug_form, severity, recurrence)
+        VALUES (#{taskId,jdbcType=INTEGER},
+                #{employeeId,jdbcType=INTEGER}, #{employeeName,jdbcType=VARCHAR}, #{reportTime,jdbcType=TIMESTAMP},
+                #{title,jdbcType=VARCHAR}, #{intro,jdbcType=VARCHAR}, #{steps,jdbcType=VARCHAR},
+                #{device,jdbcType=VARCHAR}, #{picture,jdbcType=VARCHAR}, #{bugForm,jdbcType=VARCHAR},
+                #{severity,jdbcType=VARCHAR}, #{recurrence,jdbcType=VARCHAR})
+    </insert>
+    <update id="updateByPrimaryKey" parameterType="cn.welldone.collect.po.report.Report">
+        UPDATE report
+        SET task_id      = #{taskId,jdbcType=INTEGER},
+            employee_id  = #{employeeId,jdbcType=INTEGER},
+            employee_name=#{employeeName,jdbcType=VARCHAR},
+            report_time  = #{reportTime,jdbcType=TIMESTAMP},
+            title        = #{title,jdbcType=VARCHAR},
+            intro        = #{intro,jdbcType=VARCHAR},
+            steps=#{steps,jdbcType=VARCHAR},
+            device=#{device,jdbcType=VARCHAR},
+            picture=#{picture,jdbcType=VARCHAR},
+            bug_form=#{bugForm,jdbcType=VARCHAR},
+            severity=#{severity,jdbcType=VARCHAR},
+            recurrence=#{recurrence,jdbcType=VARCHAR}
+        WHERE id =#{id,jdbcType=INTEGER}
+    </update>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select *
+        from report
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectByTaskId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select *
+        from report
+        where task_id = #{taskId,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectByTaskIdAndEmployeeId" resultType="cn.welldone.collect.po.report.Report">
+        select *
+        from report
+        where task_id = #{taskId,jdbcType=INTEGER}
+          and employee_id = #{employeeId,jdbcType=INTEGER}
+    </select>
+
+    <delete id="clearTable">
+        DELETE
+        from report
+    </delete>
+
+    <update id="updateScore">
+        UPDATE report
+        SET score = #{score,jdbcType=DOUBLE}
+        WHERE id = #{reportId,jdbcType=INTEGER}
+    </update>
+    <select id="countReportNum" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+       select count(*)
+    from report
+    where task_id = #{taskId,jdbcType=INTEGER}
+    </select>
+</mapper>
